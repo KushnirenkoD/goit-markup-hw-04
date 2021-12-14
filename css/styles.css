@@ -326,11 +326,15 @@ p {
   display: flex;
   margin: 0;
   justify-content: center;
+  height: 251px;
+  padding: 0px;
 }
 .credo-item {
   width: 270px;
+  height: auto;
 }
-.credo-item::before {
+/* --переделывает подключение иконок с SVG-спрайт на :before -- */
+/* .credo-item::before {
   content: '';
   display: block;
   height: 120px;
@@ -339,24 +343,38 @@ p {
   background-repeat: no-repeat;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-.icon-antenna::before {
+} */
+/* .icon-antenna::before {
   background-image: url(../images/icon-antenna.svg);
 }
 .icon-clock::before {
   background-image: url(../images/icon-clock.svg);
 }
-.icon-diagramma::before {
+.icon-diagrama::before {
   background-image: url(../images/icon-diagrama.svg);
 }
 .icon-astronaut::before {
   background-image: url(../images/icon-astronaut.svg);
-}
+} */
+/* ----------------------------------------------------- */
 .credo-item:not(:last-child) {
   margin-right: 30px;
 }
 .heading-third {
   margin-bottom: 10px;
+}
+
+/* --переделывает подключение иконок с :before SVG-спрайт-- */
+.credo-item > svg {
+  content: '';
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
 }
 
 /*========================= Example ===================================*/
