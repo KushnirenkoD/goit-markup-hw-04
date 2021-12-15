@@ -64,7 +64,9 @@ p {
 .link:focus {
   color: var(--primery-color);
 }
-
+.link:active {
+  color: var(--primery-color);
+}
 /*Конец вынесения стилей хэдера*/
 
 /*Вынесены стили кнопок*/
