@@ -215,7 +215,7 @@ p {
 .adress-boxes,
 .nav-boxes {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   padding: 0;
   margin: 0;
 }
@@ -226,6 +226,12 @@ p {
 .adress-boxes {
   margin-left: auto;
 }
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 0 0 auto;
+}
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -233,13 +239,12 @@ p {
   margin-right: 50px;
 }
 .nav-item svg {
-  margin-right: 10px;
+  margin: 0px 10px 0px 0px;
 }
 .nav-item:hover svg,
 .nav-item:focus svg {
   fill: var(--primery-color);
 }
-
 /*========================= Hero ===================================*/
 .hero-section {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -478,6 +483,7 @@ p {
   border-radius: 4px;
   margin: 0px;
   fill: #afb1b8;
+  cursor: pointer;
 }
 
 .client:hover,
@@ -496,7 +502,7 @@ p {
 .style {
   display: flex;
   flex-direction: column;
-  padding: 60px 70px 0px 0px;
+  padding: 60px 70px 60px 0px;
   /* width: 400px; */
 }
 .footer-box-index > .container > .style > .logo {
